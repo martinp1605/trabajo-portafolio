@@ -1,0 +1,52 @@
+body {
+    background-color: #d8cbcb;
+    column-gap: 20px;
+}
+
+.navbar{
+    border: 5px solid white;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(33, 31, 31);
+}
+.titulo{
+    flex: 1;
+    text-align: left;
+    front-size: 30px;
+}
+.menu{
+    list-style: none;
+    flex: 1;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.menu a{
+    background-color: aliceblue;
+    border: 1px solid #222;
+    border-radius: 1px;
+}
+.card1 {
+    margin: 60px auto 0;
+    background-color: azure;
+    width: 300px;
+    border: 4px solid #d8cbcb;
+    border-radius: 15px;
+    overflow: hidden;
+    frot-family: sans-serif;
+    box-shadow: 0 4px 10px #555;
+}
+.card1:hover{
+    transform: scale(1.05);
+}
+.card-foto {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
