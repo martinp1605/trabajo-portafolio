@@ -1,39 +1,57 @@
-body {
+
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+.body {
+    display: flex;
+    flex-direction: column;
     background-color: #d8cbcb;
-    column-gap: 20px;
+    gap: 40px;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
-.navbar{
-    border: 5px solid white;
-    border-radius: 20px;
-    position: relative;
+.header .navbar{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;
+    width: 100%;
+    justify-content: space-around;
     background-color: rgb(33, 31, 31);
 }
 .titulo{
+    font-family: "Gravitas One", serif;
     flex: 1;
     text-align: left;
-    front-size: 30px;
+    front-size: 50px;
+    margin-left: 10px;
 }
-.menu{
+.header .navbar{
+    border: 2px solid rgb(248, 243, 243);
+    border-radius: 4px;
+}
+.header .menu{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 10px;
+    text-decoration: none;
     list-style: none;
     flex: 1;
-    text-align: right;
     display: flex;
-    justify-content: flex-end;
-    gap: 15px;
+    justify-content: space-around;
 }
-.menu a{
-    background-color: aliceblue;
-    border: 1px solid #222;
-    border-radius: 1px;
+.header .menu a{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
+.main{
+    display: flex;
+
+}
+
 .card1 {
-    margin: 60px auto 0;
+    margin: 40px auto 0;
+    margin-bottom: 20px;
     background-color: azure;
+    height: 400px;
     width: 300px;
     border: 4px solid #d8cbcb;
     border-radius: 15px;
@@ -41,12 +59,18 @@ body {
     frot-family: sans-serif;
     box-shadow: 0 4px 10px #555;
 }
+.card-datos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 .card1:hover{
     transform: scale(1.05);
 }
-.card-foto {
+.card1 .card-foto {
     width: 100%;
-    height: 180px;
+    height: 300px;
     object-fit: cover;
     display: block;
 }
+
