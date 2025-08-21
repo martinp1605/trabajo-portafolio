@@ -1,27 +1,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
 
-.body {
+body {
     display: flex;
     flex-direction: column;
-    background-color: #d8cbcb;
+    background-color: #220a2b ;
+}
+section{
+    margin-bottom: 80px;
 }
 
 .header .navbar{
     display: flex;
-    margin: 30px auto;
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
     justify-content: space-around;
-}
-.titulo{
-    font-family: "Gravitas One", serif;
-    flex: 1;
-    text-align: left;
-    front-size: 50px;
-    margin-left: 10px;
-}
-.header .navbar{
-
+    gap: 5px;
+    background-color: rgba(51, 51, 51, 0.7)
 }
 .header .menu{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -43,9 +40,19 @@
 }
 .main{
     display: flex;
-
+    justify-content: center;
+    flex-direction: column;
 }
-
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-family: "Gravitas One", serif;
+    margin-top: 80px;
+    flex: 1;
+    text-align: center;
+    front-size: 50px;
+    margin-left: 10px;
+}
 .card1 {
     margin: 40px auto 0;
     margin-bottom: 20px;
@@ -72,25 +79,28 @@
     object-fit: cover;
     display: block;
 }
-.carrucel{
+.conocimientos-dev{
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #220a2b
+}
+.conocimientos-h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.idiomas{
     display: flex;
-    width: 100%;
-    overflow: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    padding: 40px;
-    margin-bottom: 40px;
+    justify-content: center;
+    gap: 50px;
 }
-.carrucel-contenedor{
+.idioma{
     display: flex;
-    animation: movercarrusel 10s linear infinite;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
 }
-.card2{
-    flex: 1 0 auto;
-    margin: 0 50px;
-    border: 2px solid black;
-    background-color: rgb(251, 212, 154);
-    height: 300px;
-    width: 300px;
+.idioma:hover{
+    transform: scale(1.1);
 }
+
 
