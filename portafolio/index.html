@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header">
-      <div class="banner">
-        <h1 class="titulo">Mi Portafolio</h1>
-        <img />
-      </div>
       <nav class="navbar">
         <ul class="menu">
           <li>
@@ -30,20 +30,29 @@
       </nav>
     </header>
     <main class="main">
+      <div class="banner">
+        <h1 class="titulo">Mi Portafolio</h1>
+        <img />
+      </div>
       <div class="card1" id="miperfil">
-        <img class="card-foto" />
+        <img src="foto-perfil.jpg" alt="foto-perfil" class="card-foto" />
         <div class="card-datos">
           <p class="card-parrafo">estudiante de desarrolo full stack</p>
         </div>
       </div>
       <section class="card-conocimientos"></section>
     </main>
-    <section class="carrucel">
-      <div class="carrucel-contenedor">
-        <div class="card2">card1</div>
-        <div class="card2">card2</div>
-        <div class="card2">card3</div>
-        <div class="card2">card4</div>
+    <section class="conocimientos-dev" id="conocimientos">
+      <h2 class="conocimientos-h2">conocimientos</h2>
+      <div class="idiomas">
+        <div class="idioma">
+          <i class="fa-brands fa-html5"></i>
+          <p>HTML</p>
+          <i class="fa-brands fa-css3-alt"></i>
+          <p>CSS</p>
+          <i class="fa-brands fa-js"></i>
+          <p>JAVA SCRIPT</p>
+        </div>
       </div>
     </section>
 
