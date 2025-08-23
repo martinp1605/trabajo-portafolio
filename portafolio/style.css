@@ -79,6 +79,22 @@ section{
     object-fit: cover;
     display: block;
 }
+.info{
+    padding: 60px 30px;
+    background-color: #220a2b;
+    text-align: center;
+}
+.soy-martin{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+.info p{
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
 .conocimientos-dev{
     text-align: center;
     padding: 20px 20px;
