@@ -124,7 +124,8 @@ section{
     background: #220a2b;
 }
 .trabajos img{
-    width: 120px;
+    height: 200PX;
+    width: 200px;
     margin-top: 10px;
 }
 footer#contacto{
@@ -133,7 +134,7 @@ footer#contacto{
     justify-content: center;
     text-align: center;
     background-color: #220a2b;
-    color: black
+    color: black;
     padding: 30px 15px;
 }
 .contato h2 ,.contato p{
@@ -153,4 +154,69 @@ footer#contacto{
 }
 .redes-sociales a:hover{
     color: black;
+}
+@media (min-width: 600PX){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        text-align: left;
+    }
+    .header nav ul{
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    .conocimientos-dev{
+        text-align: left;
+        padding: 30px;
+    }
+    .idiomas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .trabajos{
+        padding: 30px;
+        text-align: left;
+    }
+    .contacto{
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 30px;
+    }
+    .redes-sociales{
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+    .header{
+        padding: 20px 60px;
+    }
+    .header nav ul{
+        gap: 40px;
+    }
+    .conocimientos-dev ,
+    .trabajos {
+        text-align: center;
+        padding: 40px;
+    }
+    .contacto{
+        padding: 40px 60px;
+    }
+    .redes-sociales{
+        justify-content: center;
+    }
+}
 }
