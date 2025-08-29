@@ -118,5 +118,39 @@ section{
 .idioma:hover{
     transform: scale(1.1);
 }
-
-
+.trabajos{
+    text-align: center;
+    padding: 20px;
+    background: #220a2b;
+}
+.trabajos img{
+    width: 120px;
+    margin-top: 10px;
+}
+footer#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #220a2b;
+    color: black
+    padding: 30px 15px;
+}
+.contato h2 ,.contato p{
+    text-align: center;
+    margin: 10px 0
+}
+.redes-sociales{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.redes-sociales a{
+    color: white;
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+.redes-sociales a:hover{
+    color: black;
+}
